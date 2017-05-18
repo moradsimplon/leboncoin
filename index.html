@@ -55,11 +55,119 @@
 <a id="two" href="#" class="btn btn-default"><span class="glyphicon glyphicon-screenshot"></span> Rechercher autour de moi</a>
 <h4 >Trouvez la bonne affaire parmi <span>27 280 356 petites annonces</span> sur leboncoin.</h4>
   </section>
-  <section>
+  <section id="carte" class="col-md-6">
+    <img id="cartemap" src="img/carte.jpg" alt="carte de france" usemap="#Map" />
+    <map name="Map" id="Map">
+        <area alt="" title="" href="#" shape="poly" coords="486,121,414,115,362,91,353,66,369,46,393,38" />
+        <area alt="" title="" href="#" shape="poly" coords="479,130,468,149,459,161,449,180,442,194,427,184,414,184,396,176,376,174,370,163,364,154,364,144,363,129,357,114,353,109" />
 
+    </map>
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"> </script>
+<script type="text/javascript" src="js/jquery.maphilight.js"></script>
+
+<script>
+
+//au chardement de ma page
+$(document).ready(function()
+{
+    var data = {};
+    jQuery('#cartemap').maphilight();
+    data.alwaysOn = false; //je veux qu'il m'affiche constament une zone ...
+    data.fillColor = 'FE2E2E'; //rouge
+    data.strokeColor = '0000FF'; //bleu foncé
+    data.strokeWidth ='5'
+    data.fillOpacity = '1';
+    $('area').data('maphilight', data).trigger('alwaysOn.maphilight');
+
+});
+</script>
   </section>
-  <section>
-    <aside class="">
+  <section >
+
+      <aside id="departement" class="col-md-2 tiny-hidden small-hidden medium-hidden">
+		<ul id="listdepartement">
+
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/alsace/" title="Alsace" data-map="alsace" id="region_0" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::alsace&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Alsace</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/aquitaine/" title="Aquitaine" data-map="aquitaine" id="region_1" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::aquitaine&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Aquitaine</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/auvergne/" title="Auvergne" data-map="auvergne" id="region_2" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::auvergne&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Auvergne</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/basse_normandie/" title="Basse-Normandie" data-map="basse_normandie" id="region_3" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::basse_normandie&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Basse-Normandie</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/bourgogne/" title="Bourgogne" data-map="bourgogne" id="region_4" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::bourgogne&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Bourgogne</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/bretagne/" title="Bretagne" data-map="bretagne" id="region_5" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::bretagne&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Bretagne</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/centre/" title="Centre" data-map="centre" id="region_6" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::centre&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Centre</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/champagne_ardenne/" title="Champagne-Ardenne" data-map="champagne_ardenne" id="region_7" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::champagne_ardenne&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Champagne-Ardenne</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/corse/" title="Corse" data-map="corse" id="region_8" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::corse&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Corse</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/franche_comte/" title="Franche-Comté" data-map="franche_comte" id="region_9" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::franche_comte&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Franche-Comté</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/haute_normandie/" title="Haute-Normandie" data-map="haute_normandie" id="region_10" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::haute_normandie&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Haute-Normandie</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/ile_de_france/" title="Ile-de-France" data-map="ile_de_france" id="region_11" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::ile_de_france&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Ile-de-France</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/languedoc_roussillon/" title="Languedoc-Roussillon" data-map="languedoc_roussillon" id="region_12" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::languedoc_roussillon&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Languedoc-Roussillon</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/limousin/" title="Limousin" data-map="limousin" id="region_13" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::limousin&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Limousin</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/lorraine/" title="Lorraine" data-map="lorraine" id="region_14" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::lorraine&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Lorraine</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/midi_pyrenees/" title="Midi-Pyrénées" data-map="midi_pyrenees" id="region_15" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::midi_pyrenees&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Midi-Pyrénées</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/nord_pas_de_calais/" title="Nord-Pas-de-Calais" data-map="nord_pas_de_calais" id="region_16" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::nord_pas_de_calais&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Nord-Pas-de-Calais</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/pays_de_la_loire/" title="Pays de la Loire" data-map="pays_de_la_loire" id="region_17" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::pays_de_la_loire&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Pays de la Loire</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/picardie/" title="Picardie" data-map="picardie" id="region_18" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::picardie&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Picardie</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/poitou_charentes/" title="Poitou-Charentes" data-map="poitou_charentes" id="region_19" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::poitou_charentes&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Poitou-Charentes</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/provence_alpes_cote_d_azur/" title="Provence-Alpes-Côte d'Azur" data-map="provence_alpes_cote_d_azur" id="region_20" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::provence_alpes_cote_d_azur&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Provence-Alpes-Côte d'Azur</a>
+				</li>
+			<li class=" mbs">
+					<a href="//www.leboncoin.fr/annonces/offres/rhone_alpes/" title="Rhône-Alpes" data-map="rhone_alpes" id="region_21" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::rhone_alpes&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Rhône-Alpes</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/guadeloupe/" title="Guadeloupe" data-map="guadeloupe" id="region_22" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::guadeloupe&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Guadeloupe</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/martinique/" title="Martinique" data-map="martinique" id="region_23" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::martinique&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Martinique</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/guyane/" title="Guyane" data-map="guyane" id="region_24" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::guyane&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Guyane</a>
+				</li>
+			<li class="">
+					<a href="//www.leboncoin.fr/annonces/offres/reunion/" title="Réunion" data-map="reunion" id="region_25" class="trackable" data-info="{&quot;event_name&quot; : &quot;accueil::selection_region::lien_textuel::reunion&quot;, &quot;event_type&quot; : &quot;click&quot;, &quot;event_s2&quot; : &quot;1&quot;, &quot;click_type&quot; : &quot;N&quot;}">Réunion</a>
+				</li>
+
+		</ul>
+
 
     </aside>
   </section>
