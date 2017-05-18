@@ -108,9 +108,12 @@ h4 span {
 
 /******************partie carte*************************/
 
-#carte img{
+#carte svg{
   width: 100%;
   height: 600px;
+}
+svg g path:hover {
+  fill: #f56b2a;
 }
 
 /********************partie liste departement************/
@@ -125,7 +128,4 @@ h4 span {
   color: #f56b2a;
 text-decoration: none;
 
-}
-area:hover{
-  background: #f56b2a
 }
