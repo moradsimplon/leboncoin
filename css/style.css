@@ -75,3 +75,27 @@ padding: 22px;
 #navlist a:hover{
   text-decoration: underline;
 }
+/***************FIN DE HEADER*************************
+******************************************************/
+
+#one , #two , h4{
+  width: 100%;
+  margin: 5%;
+}
+#one{
+  background: #4183D7;
+  color:#fff;
+  border: none;
+}
+#two{
+  color: #4183d7;
+  background: transparent;
+  border: 1px solid #4183d7;
+}
+h4{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+h4 span {
+  color: #F56B30;
+}
