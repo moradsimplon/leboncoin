@@ -1,0 +1,77 @@
+*{
+  font-family: "OpenSansSemiBold",sans-serif;
+}
+/****************************HEADER*****************
+****************************************************/
+
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 12px;
+    background-color: rgba(245, 107, 42, 1);
+    border-width: 1px;
+    border-radius: 4px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(245, 107, 42, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(245, 107, 42, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #f56b2a;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #f56b2a;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #f56b2a;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #f56b2a;
+}
+#connecter{
+  font-size: 13px;
+  border-radius: 0px;
+height: 64px;
+margin-left: 80px;
+padding: 22px;
+  background-color:#F56B2A;
+  border: none ;
+  color: #fff;
+}
+#connecter:hover{
+  background-color: #fff;
+  color: #F56B2A;
+}
+
+#logolebon a{
+  font-family: 'Fredoka One', cursive;
+}
+#logolebon{
+
+  font-weight: bold;
+  padding: 7px;
+  margin-left: 7%;
+}
+#navlist{
+
+ font-weight: bold;
+  padding: 7px;
+}
+#navlist a:hover{
+  text-decoration: underline;
+}
