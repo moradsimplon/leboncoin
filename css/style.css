@@ -129,3 +129,10 @@ svg g path:hover {
 text-decoration: none;
 
 }
+/*************************partie bas de pages**********/
+.textFooter{
+
+margin-top: 3rem;
+font-size: 1.3rem;
+text-align: center;
+}
