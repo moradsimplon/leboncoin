@@ -43,6 +43,12 @@
 #custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #f56b2a;
 }
+#menulog{
+  color: #f56b2a;
+}
+#menulog:hover{
+  color: #369;
+}
 #connecter{
   font-size: 13px;
   border-radius: 0px;
@@ -76,6 +82,8 @@ padding: 22px;
 }
 #navlist a:hover{
   text-decoration: underline;
+}
+
 }
 /***************FIN DE HEADER*************************
 ******************************************************/
@@ -114,10 +122,17 @@ h4 span {
   width: 100%;
   height: 600px;
 }
+svg{
+  width: 100%;
+}
 svg g path:hover {
   fill: #f56b2a;
 }
 
+#footbutton{
+  margin-bottom: 3rem;
+  text-align: left;
+}
 /********************partie liste departement************/
 
 #listdepartement{
@@ -125,10 +140,12 @@ svg g path:hover {
   color: #3873bd;
   text-decoration: none;
   font-weight: 700;
+  padding: 0;
 }
 #listdepartement a:hover{
   color: #f56b2a;
 text-decoration: none;
+
 
 }
 /*************************partie bas de pages**********/
