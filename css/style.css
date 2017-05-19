@@ -94,23 +94,27 @@ padding: 22px;
 
 /*************partie de gauche***********************/
 
-#one , #two , h4{
-  width: 100%;
+
+  #one{
+
   margin: 5%;
-}
-#one{
   background: #4183D7;
   color:#fff;
   border: none;
 }
 #two{
+
+  margin: 5%;
   color: #4183d7;
   background: transparent;
   border: 1px solid #4183d7;
 }
 h4{
+
+  margin: 3%;
   font-size: 1.4rem;
   font-weight: bold;
+  height: 150px;
 }
 h4 span {
   color: #F56B30;
@@ -151,7 +155,7 @@ text-decoration: none;
 /*************************partie bas de pages**********/
 .textFooter{
 
-margin-top: 3rem;
+margin-top: 20%;
 font-size: 1.3rem;
 text-align: center;
 }
