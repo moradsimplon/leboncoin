@@ -121,7 +121,14 @@ h4 span {
 }
 
 /******************partie carte*************************/
-
+.land
+{
+  fill: #3D6ABE;
+  fill-opacity: 1;
+  stroke:#1F377F;
+  stroke-opacity: 1;
+  stroke-width:0.5;
+}
 #carte svg{
   width: 100%;
   height: 600px;
